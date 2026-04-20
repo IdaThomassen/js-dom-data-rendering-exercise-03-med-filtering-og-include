@@ -126,6 +126,3 @@ function displayMovies(movieList) {
 }
 
 displayMovies(movies);
-
-
-
