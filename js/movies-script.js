@@ -110,6 +110,12 @@ function filterMovies() {
 
   let filteredMovies = movies;
 
+  if (selectedValue != "Alle") {
+    filteredMovies = filteredMovies.filter((movie) => {
+        return movie.genre === selectedValue;
+    });
+}
+
 
 }
 
