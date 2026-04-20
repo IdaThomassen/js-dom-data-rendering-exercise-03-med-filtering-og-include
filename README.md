@@ -1,4 +1,4 @@
-# 🎬 JavaScript DOM Data Rendering #3  
+# 🎬 JavaScript DOM Data Rendering #3 med filtering og include
 ## Forbedring af DOM-rendering med `map()` og `join("")`  
 ### CineMaxx Movies – Improved Version
 
