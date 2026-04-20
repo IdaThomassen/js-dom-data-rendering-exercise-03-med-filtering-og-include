@@ -121,7 +121,13 @@ function filterMovies() {
       return movie.title.toLowerCase().includes(searchTerm);
     });
   }
+    // Denne skal måske bruges, ikke sikker endnu
+    displayMovies(filteredMovies);
 }
+
+selectedCategory.addEventListener("change", filterMovies);
+
+
 
 function displayMovies(movieList) {
   const html = movieList
