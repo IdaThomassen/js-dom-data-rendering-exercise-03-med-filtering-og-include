@@ -112,11 +112,15 @@ function filterMovies() {
 
   if (selectedValue != "Alle") {
     filteredMovies = filteredMovies.filter((movie) => {
-        return movie.genre === selectedValue;
+      return movie.genre === selectedValue;
     });
-}
+  }
 
-
+  if (searchTerm != "") {
+    filteredMovies = filteredMovies.filter((movie) => {
+      return movie.title.toLowerCase().includes(searchTerm);
+    });
+  }
 }
 
 function displayMovies(movieList) {
