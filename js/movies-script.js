@@ -97,6 +97,12 @@ const movies = [
 // opgave 4 og peger på id movies-container i HTML-koden
 const moviesContainer = document.querySelector("#movies-container");
 
+const selectedCategory = document.querySelector("#category-select");
+
+const searchInput = document.querySelector("#gearch");
+
+const form = document.querySelector("form");
+
 function displayMovies(movieList) {
   const html = movieList
     .map((movie) => {
